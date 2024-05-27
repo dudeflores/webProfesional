@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JoseDev</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://kit.fontawesome.com/095fa37dac.js" crossorigin="anonymous"></script>
+    <script defer src="index.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script>src="otros/05-script-searchbar.js"</script>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="#" class="logo nav-link">logo</a>
+            <button class="nav-toggle" aria-label="Abrir menu">
+                <i class="fa-solid fa-bars-staggered" style="color: #6b0f68;"></i>
+            </button>
+            <ul class="nav-menu">
+                <li class="nav-menu-item"><a href="#" class="nav-menu-link nav-link">Blog</a></li>
+                <li class="nav-menu-item"><a href="#" class="nav-menu-link nav-link">Videos</a></li>
+                <li class="nav-menu-item"><a href="#" class="nav-menu-link nav-link">Sobre Mi</a></li>
+                <li class="nav-menu-item"><a href="#" class="nav-menu-link nav-link nav-menu-link_active ">Contactos</a></li>
+            </ul>
+
+            <section class="nav-search-container">
+                <button class="search-btn nav-search-container">
+                    <i class="fas fa-search "></i>
+                </button>
+                <input type="text" class="search-input " placeholder="Buscar...">
+                
+            </section>
+        </nav>
+    </header>
+
+    <div class="contenedorimg">
+    <img src="img1.jpg" onclick="change(this)"/>
+    <img src="img2.jpg" onclick="change(this)"/>
+    <img src="img3.jpg" onclick="change(this)"/>
+</div>
+
+<div class="box">
+
+    <div class="info1">
+        <h1>BIENVENIDOS JOSEDEV</h1>
+        <h2>Consulta tu codigo aqui</h2>
+        <h4>Escribeme por mis redes sociales</h4>
+
+     </div>
+
+    <div class="form-register">
+            <h4>Formulario Registro</h4>
+            <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingresa tu Nombre">
+            <input class="controls" type="text" name="apellidos" id="nombres" placeholder="Ingresa tu Nombre">
+            <input class="controls" type="email" name="Correo" id="correo" placeholder="Ingresa tu email">
+            <input class="controls" type="password" name="Clave" id="clave" placeholder="Clave">
+            <p>Estoy de acuerdo con <a href="#"> Terminos y condiciones</a></p>
+            <input class="boton" type="submit" value="Registrar">
+            <p><a href="#">Ya tengo cuenta?</a></p>
+
+            
+    </div>
+</div>
+
+    <main>
+        <h1>body</h1>
+    </main>
+    
+    <script>
+        function change(a) {
+            if (a.tagName == "IMG") {
+                document.body.style.backgroundImage = "url("+ a.src +")";
+            }
+        }
+    </script>
+</body>
+</html>
