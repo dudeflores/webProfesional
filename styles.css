@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap);
+
 * {
     margin: 0;
     box-sizing: border-box;
@@ -144,11 +146,11 @@ img {
 
 .form-register {
     width: 500px;
-   background-color: #000;
+    background-color: #000;
     padding: 30px;
     margin: auto;
     margin-right: 300px;
-    margin-top: 100px;
+    margin-top: 330px;
     border-radius: 4px;
     font-family: 'calibri';
     color: #ddd;
@@ -203,9 +205,13 @@ img {
 }
 
 .box {
-    display: flex;
-    align-content: space-evenly;
+    display: block;
+    align-content: normal;
     background-image: url(img5.jpg);
+    background-position: 59%;
+    background-position-y: 0%;
+    border-radius: 4px;
+    box-shadow: 7px 13px 37px #000;
     
 }
 
@@ -219,24 +225,35 @@ img {
 
 .box .info1 h1 {
     position: absolute;
-    top: -1104%;
+    top: -1701%;
     padding: 0px;
+    font-size: 70px;
+    font-family: "Merriweather", cursive;
+    font-weight: 800;
     width: max-content;
-    left: -39%;
+    left: -2335%;
+    color: #ddd;
+   
 }
 .box .info1 h2 {
     position: absolute;
-    top: 917%;
+    top: -80%;
+    left: -2335%;
     padding: 0px;
     width: max-content;
-    left: -39%;
+    font-family: "Merriweather", cursive;
+    color: #ddd;
+    font-size: 50px;
 }
 .box .info1 h4 {
     position: absolute;
     top: 1683%;
     padding: 0px;
     width: max-content;
-    left: -39%;
+    left: -2335%;
+    font-family: "Merriweather", cursive;
+    color: #ddd;
+    font-size: 20px;
 }
 
 
@@ -301,4 +318,9 @@ img {
     .nav-toggle:focus:not(:focus-visible) {
         outline: none;
     }
+}
+
+@font-face {
+    font-family:Merriweather ;
+    src: url("Merriweather.woff2");
 }
