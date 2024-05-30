@@ -1,0 +1,36 @@
+.twitter-followCard {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: .8rem;
+    justify-content: space-between;
+}
+.twitter-followCard-header {
+    display: flex;
+    align-items: center;
+    gap: 4pc;
+}
+.twitter-followCard-info {
+    display: flex;
+    flex-direction: column;
+
+.twitter-followCard-infoUserName{
+    opacity: .6;
+}
+
+
+}
+.twitter-followCard-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 1000px;
+}
+
+.twitter-followCard-button {
+    margin-left: 16px;
+    border: 0;
+    border-radius: 999px;
+    padding: 6px 16px;
+    font-weight: bold;
+
+}

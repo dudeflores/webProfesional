@@ -1,10 +1,12 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-
+/*import PropTypes from 'prop-types'*/
+import {App} from './App.jsx'
+import './index.css'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 
-const createButton = ({text}) => {
+/*const SpecialButton = ({text}) => {
    return (
    <button>
     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
@@ -13,12 +15,12 @@ const createButton = ({text}) => {
 {text}
   </button>
   )
-}
+}*/
+
+/*SpecialButton.PropTypes = {
+  text: PropTypes.string.isRequired
+}*/
 
 root.render(
-<React.Fragment>
-{createButton({text: 'Button 1'})}
-{createButton({text: 'Button 2'})}
-{createButton({text: 'Button 3'})}
-</React.Fragment>
+  <App />
 )
